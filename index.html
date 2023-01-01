@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6c570ecf7d.js" crossorigin="anonymous"></script>
+    <script src="nav.js"> </script>
+</head>
+<body id="body">
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">logo</div>
+            <ul class="navbar__lists">
+                <li> <a class="active" href="index.html">Page 2</a></li>
+                <li> <a href="index.html">Page 1</a></li>
+                <li> <a href="index.html">Page 4</a></li>
+                <li> <a href="index.html">Page 5</a></li>
+                <li> <a href="index.html">Page 6</a></li>
+                <li> <a href="index.html">Page 3</a></li>
+            </ul>
+            <div class="navbar__icon" onclick="myfunction()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="responsivenavbar" id="navlists">
+            <div class="xmark" onclick="myfunction1()"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+            <ul class="responsivenavbar__navbar__lists" id="navlistwrap">
+                <li> <a href="index.html">Page 2</a></li>
+                <li> <a href="index.html">Page 1</a></li>
+                <li> <a href="index.html">Page 4</a></li>
+                <li> <a href="index.html">Page 5</a></li>
+                <li> <a href="index.html">Page 6</a></li>
+                <li> <a href="index.html">Page 3</a></li>
+            </ul>
+    </div>
+    <div class="menu">
+        <div class="menu__container">
+            <div class="menu__texts">
+                <p class="menu__head">Menu</p>
+                <div class="menu__textdescriptioncontainer">
+                    <p class="menu__textdescription">
+                        Unique wood fired pizzas or be tempted by our pasta, antipasto, focaccias, salads and Bruschetta dishes. Relax in the friendly ambience as you enjoy the aromas of the wood ovens or sit al fresco and soak up the Mildura sunshine.
+                    </p>
+                </div>
+            </div>
+            <div class="menu__original menu--commonmod">
+                <div>
+                    <img src="original.jpg" alt="" class="menu__img">
+                </div>
+                <div>
+                    <p class="menu__itemname">  Original</p>
+                    <p class="menu__itemdescription">Tomato sauce, mozzarella & oregano</p>
+                    <p class="menu__itemprice">$18.00</p>
+                    <button class="addtocartbtn"> ADD TO CART </button>
+                </div>
+            </div>
+            <div class="menu__salami menu--commonmod">
+                <div>
+                    <img src="salami.jpg" alt="" class="menu__img">
+                </div>
+                <div>
+                    <p class="menu__itemname">  Salami</p>
+                    <p class="menu__itemdescription">Tomato sauce, mozzarella & oregano</p>
+                    <p class="menu__itemprice">$15.00</p>
+                    <button class="addtocartbtn"> ADD TO CART </button>
+                </div>
+            </div>
+            <div class="menu__chicken menu--commonmod">
+                <div>
+                    <img src="chicken.jpg" alt="" class="menu__img">
+                </div>
+                <div>
+                    <p class="menu__itemname">  Chicken</p>
+                    <p class="menu__itemdescription">Tomato sauce, mozzarella & oregano</p>
+                    <p class="menu__itemprice">$25.00</p>
+                    <button class="addtocartbtn"> ADD TO CART </button>
+                </div>
+            </div>
+            <div class="menu__hawaiian menu--commonmod">
+                <div>
+                    <img src="hawaiian.jpg" alt="" class="menu__img">
+                </div>
+                <div>
+                    <p class="menu__itemname">  Hawaiian</p>
+                    <p class="menu__itemdescription">Tomato sauce, mozzarella & oregano</p>
+                    <p class="menu__itemprice">$16.00</p>
+                    <button class="addtocartbtn"> ADD TO CART </button>
+                </div>
+            </div>
+            <div class="menu__lastline">
+                Images from <span class="freepik">Freepik</span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__text">
+            Sample text. Click to select the text box. Click again or double click to start editing the text.
+        </p>
+    </footer>
+</body>
+</html>

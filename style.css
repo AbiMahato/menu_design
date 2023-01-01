@@ -1,0 +1,337 @@
+*{
+    /* border: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    padding: 8px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    width: 1115px;
+}
+.navbar__logo{
+    font-size: 35px;
+    color: #BBBBBB;
+    display: inline-block;
+}
+.navbar__lists{
+    list-style-type: none;
+    display: inline-flex;
+    column-gap: 35px;
+    float: right;
+}
+.navbar__lists li a{
+    text-decoration: none;
+    color: #2F2F2F;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.active{
+    color: #F05510!important;
+}
+.navbar__icon{
+    font-size: 1.7rem;
+    display: none;
+}
+.navbar__icon:hover{
+    color:#F4C7B6;
+}
+
+.responsivenavbar{
+    position: absolute;
+    top: 0px;
+    width:250px;
+    height: 100vh;
+    background-color: #0C0C0C;
+    opacity: 0.9;
+    width: 0px;
+    /* display: none; */
+    transition: 1s width;
+}
+.responsivenavbar__navbar__lists{
+    list-style-type: none;
+    margin-top: 70px;
+    /* display: none; */
+    position: relative;
+    left: -200px;
+    transition: 1.5s left;
+}
+.responsivenavbar__navbar__lists li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: lighter;
+    display: block;
+    margin-left: 40px;
+    padding: 8px 0px;
+    width: 70px;
+}
+.xmark{
+    float: right;
+    font-size: 30px;
+    color: white;
+    margin: 20px 20px;
+}
+
+
+
+
+
+/* menu css from here */
+.menu{
+    background-color:#E5E5E5 ;
+    display: flex;
+    justify-content: center;
+}
+.menu__head{
+    text-align: center;
+    color: #F12C0E;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.menu__textdescriptioncontainer{
+    display: flex;
+    justify-content: center;
+}
+.menu__textdescription{
+    text-align: center;
+    font-style: italic;
+    width: 800px;
+}
+.menu__texts{
+    grid-area: texts;
+}
+.menu__original{
+    grid-area: original;
+}
+.menu__salami{
+    grid-area:salami ;
+}
+.menu__chicken{
+    grid-area: chicken;
+}
+.menu__hawaiian{
+    grid-area: hawaiian;
+}
+.menu__lastline{
+    text-align: center;
+    grid-area: lastline;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+.menu--commonmod{
+    background-color: #FFFFFF;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
+    width: 485px;
+}
+.menu__container{
+    display: grid;
+    /* grid-template-columns: 550px 550px; */
+    grid-template-areas: 
+        'texts texts'
+        'original salami'
+        'chicken hawaiian'
+        'lastline lastline'
+    ;
+    gap: 25px;
+}
+.menu__img{
+    width: 250px;
+    height: 250px;
+    object-fit:cover;
+}
+.menu__itemname{
+    font-size: 1.8rem;
+}
+.menu__itemdescription{
+    font-style: italic;
+    font-weight: lighter;
+}
+.menu__itemprice{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F1330E;
+}
+.addtocartbtn{
+    padding: 15px 30px;
+    background-color: #E5E5E5;
+    border: 0px;
+    cursor: pointer;
+}
+.addtocartbtn:hover{
+    background-color: #CECECE;
+}
+.freepik{
+    color: #F05510;
+    font-weight: bold;
+}
+
+
+
+
+/* footer css */
+.footer{
+    padding: 40px 40px 100px 40px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+}
+.footer__text{
+    color: white;
+    text-align: center;
+    width: 450px;
+}
+
+
+
+
+/* responsive for 1300px */
+@media (max-width:1300px) {
+
+    /* navbar */
+    .navbar{
+        width: 935px;
+    }
+
+    .menu--commonmod{
+        width: 395px;
+    }
+
+
+    
+    .menu__img{
+        width: 160px;
+        height: 250px;
+        object-fit:cover;
+    }
+    
+}
+
+
+
+
+/* responsive for 1030px */
+@media (max-width:1030px) {
+    /* navbar */
+    .navbar{
+        width: 715px;
+    }
+    .navbar__lists{
+        display: none;
+    }
+    .navbar__icon{
+        display: block;
+        float: right;
+        padding-top: 10px;
+    }
+
+
+    .menu__textdescription{
+        width: 705px;
+    }
+    .menu--commonmod{
+        width: 655px;
+    }
+    .menu__container{
+        grid-template-areas: 
+            'texts'
+            'original'
+            'salami'
+            'chicken'
+            'hawaiian'
+            'lastline'
+        ;
+    }
+    .menu__img{
+        width: 250px;
+        height: 250px;
+        object-fit:cover;
+    }
+    
+}
+
+
+
+/* responsive for 800px */
+@media (max-width:800px) {
+    /* navbar */
+    .navbar{
+        width: 540px;
+    }
+    .navbar__lists{
+        display: none;
+    }
+
+    .menu__textdescription{
+        width: 530px;
+    }
+    .menu--commonmod{
+        width: 478px;
+    }
+    .menu__container{
+        grid-template-areas: 
+            'texts'
+            'original'
+            'salami'
+            'chicken'
+            'hawaiian'
+            'lastline'
+        ;
+    }
+    .menu__img{
+        width: 240px;
+        height: 250px;
+        object-fit:cover;
+    }
+}
+
+
+
+
+/* responsive for 570px */
+@media (max-width:570px) {
+    /* navbar */
+    .navbar{
+        width: 320px;
+    }
+    .navbar__lists{
+        display: none;
+    }
+
+
+    .menu__textdescription{
+        width: 310px;
+        font-size: 16px;
+    }
+    .menu--commonmod{
+        width: 280px;
+        grid-template-columns: auto;
+        padding: 25px 15px;
+    }
+    .menu__container{
+        grid-template-areas: 
+            'texts'
+            'original'
+            'salami'
+            'chicken'
+            'hawaiian'
+            'lastline'
+        ;
+    }
+    .menu__img{
+        width: 275px;
+        height: 197px;
+        object-fit:cover;
+    }
+}
